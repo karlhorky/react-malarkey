@@ -5,7 +5,8 @@ import Malarkey from 'malarkey';
 
 const MalarkeyComponent = React.createClass({
   componentDidMount () {
-    console.log('node', this.node);
+    console.log('node');
+    Malarkey(this.node).type('JavaScript professionals').pause().delete().type('Something else');
   },
 
   render () {

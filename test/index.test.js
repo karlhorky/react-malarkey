@@ -10,7 +10,7 @@ import {
 
 
 describeWithDOM('MalarkeyComponent', () => {
-  it('should irgendwas', () => {
+  it('should mount', () => {
     mount(<MalarkeyComponent />);
   });
 });
