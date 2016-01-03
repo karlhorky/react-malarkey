@@ -1,16 +1,17 @@
 'use strict';
 
 import React from 'react';
-import expect from 'unexpected';
 import MalarkeyComponent from '../index';
-import {
-  describeWithDOM,
-  mount
-} from 'enzyme';
+import {describeWithDOM, mount, spyLifecycle} from 'enzyme';
 
+import {expect} from 'chai';
 
-describeWithDOM('MalarkeyComponent', () => {
-  it('should mount', () => {
-    mount(<MalarkeyComponent />);
+describe('MalarkeyComponent', () => {
+  describeWithDOM('MalarkeyComponent DOM', () => {
+    it('should mount', () => {
+      spyLifecycle(MalarkeyComponent);
+      mount(<MalarkeyComponent />);
+      expect(MalarkeyComponent.prototype.componentDidMount.calledOnce).to.be.true;
+    });
   });
 });

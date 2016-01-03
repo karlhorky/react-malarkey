@@ -14,8 +14,7 @@
   "keywords": [
     "malarkey",
     "react",
-    "typewriter",
-    "awesome"
+    "typewriter"
   ],
   "author": "Karl Horky <karl.horky@gmail.com>",
   "license": "MIT",
@@ -36,6 +35,7 @@
     "babel-preset-react-hmre": "^1.0.1",
     "babel-preset-stage-0": "^6.3.13",
     "babel-register": "^6.3.13",
+    "chai": "^3.4.1",
     "enzyme": "^1.2.0",
     "eslint": "^1.10.3",
     "eslint-plugin-react": "^3.11.3",
