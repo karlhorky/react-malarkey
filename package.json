@@ -4,7 +4,7 @@
   "description": "React component for malarkey",
   "main": "index.js",
   "scripts": {
-    "test": "mocha --compilers js:babel-register",
+    "test": "BABEL_ENV=test mocha --compilers js:babel-register",
     "watch": "BABEL_ENV=test mocha --compilers js:babel-register --watch"
   },
   "repository": {
