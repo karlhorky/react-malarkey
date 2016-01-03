@@ -4,9 +4,19 @@ import React from 'react';
 import Malarkey from 'malarkey';
 
 const MalarkeyComponent = React.createClass({
+  getDefaultProps () {
+    return {
+      messages: []
+    };
+  },
+
   componentDidMount () {
-    console.log('node');
-    Malarkey(this.node).type('JavaScript professionals').pause().delete().type('Something else');
+    const {messages} = this.props;
+    const malarkeyNode = Malarkey(this.node);
+
+    messages.forEach(message => {
+      malarkeyNode.type(message);
+    });
   },
 
   render () {

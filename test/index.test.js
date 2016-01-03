@@ -19,4 +19,15 @@ describeWithDOM('MalarkeyComponent DOM', () => {
     mount(<MalarkeyComponent />);
     expect(MalarkeyComponent.prototype.componentDidMount.calledOnce).to.be.true;
   });
+
+  it('should render text from props', () => {
+    const messages = ['a', 'b'];
+    const wrapper = mount(<MalarkeyComponent messages={messages} />);
+    const promise = new Promise(resolve => {
+      setTimeout(() => { return resolve(wrapper.text()); }, 60);
+    });
+    return promise.then(message => {
+      expect(message).to.equal(messages[0]);
+    });
+  });
 });
