@@ -1,28 +1,29 @@
-'use strict';
-
 import React from 'react';
-import Malarkey from 'malarkey';
+import malarkey from 'malarkey';
 
 const MalarkeyComponent = React.createClass({
   getDefaultProps () {
     return {
-      messages: []
+      messages: [],
+      options: {
+        loop: true
+      },
+      sequence (m, messages) {
+        messages.forEach(message => {
+          m.type(message).pause().delete();
+        });
+      }
     };
   },
 
   componentDidMount () {
-    const {messages} = this.props;
-    const malarkeyNode = Malarkey(this.node);
-
-    messages.forEach(message => {
-      malarkeyNode.type(message);
-    });
+    const {messages, options, sequence} = this.props;
+    const m = malarkey(this.node, options);
+    sequence(m, messages);
   },
 
   render () {
-    return (
-      <div ref={node => this.node = node} />
-    );
+    return <div ref={node => this.node = node} />;
   }
 });
 
