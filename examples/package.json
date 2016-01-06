@@ -4,8 +4,8 @@
   "description": "Examples for react-malarkey",
   "main": "server.js",
   "scripts": {
-    "starty": "node server.js",
-    "start": "webpack-dev-server --hot --inline --colors"
+    "start": "webpack-dev-server --hot --inline --colors",
+    "build": "webpack -p --progress --profile --colors"
   },
   "repository": {
     "type": "git",
