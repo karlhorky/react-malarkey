@@ -4,7 +4,7 @@ import MalarkeyComponent from 'react-malarkey';
 
 const messages = [
   'JavaScript Professionals',
-  'Something else'
+  'Expert Educators'
 ];
 
 render(
