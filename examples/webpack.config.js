@@ -12,7 +12,7 @@ module.exports = {
   output: {
     path: path.join(__dirname, 'static'),
     filename: 'bundle.js',
-    publicPath: '/examples/static/'
+    publicPath: 'static/'
   },
   plugins: [
     new webpack.NoErrorsPlugin()
