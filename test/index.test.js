@@ -6,14 +6,14 @@ import {shallow, describeWithDOM, mount, spyLifecycle} from 'enzyme';
 
 import {expect} from 'chai';
 
-describe('MalarkeyComponent', () => {
+describe('Malarkey', () => {
   it('should render one <span />', () => {
     const wrapper = shallow(<Malarkey />);
     expect(wrapper.find('span')).to.have.length(1);
   });
 });
 
-describeWithDOM('MalarkeyComponent DOM', () => {
+describeWithDOM('Malarkey DOM', () => {
   it('should mount', () => {
     spyLifecycle(Malarkey);
     mount(<Malarkey />);
