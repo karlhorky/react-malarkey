@@ -1,6 +1,8 @@
 import React from 'react';
 import malarkey from 'malarkey';
 
+// TODO: Use ES2016 properties when possible https://github.com/yannickcr/eslint-plugin-react/issues/43#issuecomment-93952239
+// or maybe even functional component syntax
 export default class Malarkey extends React.Component {
   constructor (props) {
     super(props);
