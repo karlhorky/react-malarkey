@@ -1,6 +1,6 @@
 import React from 'react';
 import {render} from 'react-dom';
-import MalarkeyComponent from 'react-malarkey';
+import Malarkey from 'react-malarkey';
 
 const messages = [
   'JavaScript Professionals',
@@ -8,6 +8,6 @@ const messages = [
 ];
 
 render(
-  <MalarkeyComponent messages={messages} />,
+  <Malarkey messages={messages} />,
   document.getElementById('root')
 );
