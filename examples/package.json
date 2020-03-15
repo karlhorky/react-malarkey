@@ -26,5 +26,11 @@
     "babel-preset-react": "^6.3.13",
     "babel-preset-stage-0": "^6.3.13",
     "webpack": "^1.12.9"
+  },
+  "resolutions": {
+    "**/detective/acorn": "5.7.4",
+    "**/mkdirp/minimist": "0.2.1",
+    "**/optimist/minimist": "0.2.1",
+    "minimist": "1.2.2"
   }
 }

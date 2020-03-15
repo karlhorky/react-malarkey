@@ -46,5 +46,12 @@
     "react-addons-test-utils": "^0.14.6",
     "react-dom": "^0.14.6",
     "webpack": "^1.12.9"
+  },
+  "resolutions": {
+    "**/detective/acorn": "5.7.4",
+    "**/espree/acorn": "5.7.4",
+    "**/mkdirp/minimist": "0.2.1",
+    "**/optimist/minimist": "0.2.1",
+    "minimist": "1.2.2"
   }
 }
