@@ -50,6 +50,7 @@
   "resolutions": {
     "**/detective/acorn": "5.7.4",
     "**/espree/acorn": "5.7.4",
+    "**/optimist/minimist": "0.2.1",
     "mkdirp": "0.5.3",
     "set-value": "2.0.1",
     "union-value": "1.0.1"
